@@ -1,0 +1,14 @@
+.list-group-item {
+    margin-bottom: 20px;
+    background-color:rgb(217, 219, 219);
+    opacity: 0.8;
+    
+}
+
+.list-group-item:hover {
+    box-shadow: 10px 10px 8px #888888;
+}
+
+h3 {
+    font-family: 'Ledger', serif;
+}
