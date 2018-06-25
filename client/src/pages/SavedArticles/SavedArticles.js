@@ -47,21 +47,22 @@ class SavedArticles extends Component {
                         <Jumbotron>
                             <h1>Saved New York Times Articles</h1>
                         </Jumbotron>
-
-                        <List>
-                            {this.state.savedArticles.map((article, i) => ( 
-                            <ListItem 
-                                key={i}
-                                title={article.title}
-                                url={article.url}
-                                date={article.date}
-                                summary={article.summary}
-                                type='Delete Article'
-                                onClick={() => this.deleteArticle(article._id)}
-                                > 
-                            </ListItem>
-                            ))}
-                        </List>
+                            <Container>
+                            <List>
+                                {this.state.savedArticles.map((article, i) => ( 
+                                <ListItem 
+                                    key={i}
+                                    title={article.title}
+                                    url={article.url}
+                                    date={article.date}
+                                    summary={article.summary}
+                                    type='Delete Article'
+                                    onClick={() => this.deleteArticle(article._id)}
+                                    > 
+                                </ListItem>
+                                ))}
+                            </List>
+                            </Container>
                     </Col>
                 </Row>
             </Container>
